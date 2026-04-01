@@ -65,7 +65,6 @@ admission-crm/
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/admission-crm.git
-cd admission-crm
 ```
 
 ### 2. Setup Backend
