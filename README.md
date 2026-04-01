@@ -75,13 +75,10 @@ cd backend
 npm install
 ```
 
-Create a `.env` file in `backend/`:
+Copy the example env file (already included in the repo):
 
-```env
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/admission_crm
-JWT_SECRET=your_super_secret_key
-JWT_EXPIRE=7d
+```bash
+cp backend/.env.example backend/.env
 ```
 
 Seed demo data:
