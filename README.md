@@ -93,7 +93,7 @@ Start the server:
 npm run dev
 ```
 
-### 3. Setup Frontend
+### 3. Setup Frontend (Open New Terminal)
 
 ```bash
 cd Admission-Management-CRM
