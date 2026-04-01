@@ -96,6 +96,11 @@ npm run dev
 ### 3. Setup Frontend
 
 ```bash
+git clone https://github.com/Hasnen-ali/Admission-Management-CRM.git
+cd Admission-Management-CRM
+```
+
+```bash
 cd frontend
 npm install
 npm run dev
