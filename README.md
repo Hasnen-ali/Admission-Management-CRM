@@ -77,11 +77,13 @@ npm install
 
 Copy the example env file (already included in the repo):
 
+**Linux / Mac:**
 ```bash
-# Linux / Mac
 cp .env.example .env
+```
 
-# Windows PowerShell
+**Windows PowerShell:**
+```powershell
 Copy-Item .env.example .env
 ```
 
