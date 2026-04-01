@@ -64,7 +64,7 @@ admission-crm/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/admission-crm.git
+git clone https://github.com/Hasnen-ali/Admission-Management-CRM.git
 ```
 
 ### 2. Setup Backend
