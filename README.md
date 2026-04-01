@@ -77,14 +77,8 @@ npm install
 
 Copy the example env file (already included in the repo):
 
-**Linux / Mac:**
 ```bash
 cp .env.example .env
-```
-
-**Windows PowerShell:**
-```powershell
-Copy-Item .env.example .env
 ```
 
 Seed demo data:
