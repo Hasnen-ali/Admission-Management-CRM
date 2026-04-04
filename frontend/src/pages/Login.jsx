@@ -76,18 +76,18 @@ export default function Login() {
             <p className="text-xs text-slate-400 text-center mb-3">Demo credentials</p>
             <div className="grid grid-cols-3 gap-2 text-xs">
               {[
-                { role: 'Admin', email: 'admin@crm.com', pass: 'admin123' },
-                { role: 'Officer', email: 'officer@crm.com', pass: 'officer123' },
-                { role: 'Mgmt', email: 'mgmt@crm.com', pass: 'mgmt123' },
+                { role: 'Admin', email: 'admin@crm.com', pass: 'admin123', color: 'from-indigo-500/20 to-indigo-600/10 border-indigo-500/30 hover:border-indigo-400/60', badge: 'bg-indigo-500/30 text-indigo-300' },
+                { role: 'Officer', email: 'officer@crm.com', pass: 'officer123', color: 'from-emerald-500/20 to-emerald-600/10 border-emerald-500/30 hover:border-emerald-400/60', badge: 'bg-emerald-500/30 text-emerald-300' },
+                { role: 'Mgmt', email: 'mgmt@crm.com', pass: 'mgmt123', color: 'from-purple-500/20 to-purple-600/10 border-purple-500/30 hover:border-purple-400/60', badge: 'bg-purple-500/30 text-purple-300' },
               ].map((c) => (
                 <div
                   key={c.role}
                   onClick={() => { setValue('email', c.email); setValue('password', c.pass); }}
-                  className="bg-white/5 hover:bg-white/10 cursor-pointer rounded-lg p-2 text-center transition"
+                  className={`bg-gradient-to-br ${c.color} border cursor-pointer rounded-xl p-3 text-center transition-all duration-200 hover:scale-105`}
                 >
-                  <p className="text-indigo-300 font-medium">{c.role}</p>
-                  <p className="text-slate-400 truncate">{c.email}</p>
-                  <p className="text-slate-500">{c.pass}</p>
+                  <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full mb-1 ${c.badge}`}>{c.role}</span>
+                  <p className="text-slate-300 text-xs truncate">{c.email}</p>
+                  <p className="text-slate-500 text-xs">{c.pass}</p>
                 </div>
               ))}
             </div>
