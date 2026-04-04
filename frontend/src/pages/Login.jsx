@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
 
 export default function Login() {
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
+  const { register, handleSubmit, setValue, formState: { errors, isSubmitting } } = useForm();
   const { login } = useAuth();
   const navigate = useNavigate();
 
@@ -80,7 +80,11 @@ export default function Login() {
                 { role: 'Officer', email: 'officer@crm.com', pass: 'officer123' },
                 { role: 'Mgmt', email: 'mgmt@crm.com', pass: 'mgmt123' },
               ].map((c) => (
-                <div key={c.role} className="bg-white/5 rounded-lg p-2 text-center">
+                <div
+                  key={c.role}
+                  onClick={() => { setValue('email', c.email); setValue('password', c.pass); }}
+                  className="bg-white/5 hover:bg-white/10 cursor-pointer rounded-lg p-2 text-center transition"
+                >
                   <p className="text-indigo-300 font-medium">{c.role}</p>
                   <p className="text-slate-400 truncate">{c.email}</p>
                   <p className="text-slate-500">{c.pass}</p>
