@@ -2,7 +2,28 @@
 
 A production-ready full-stack web application for managing college admissions, seat allocation, applicant tracking, and fee management.
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Now-indigo?style=for-the-badge)](https://admission-management-crm-flame.vercel.app)
+[![Backend](https://img.shields.io/badge/🔧_Backend_API-Render-green?style=for-the-badge)](https://admission-management-crm-dyoy.onrender.com)
+
 ![Tech Stack](https://img.shields.io/badge/Stack-MERN-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+---
+
+## 🌐 Live Demo
+
+> **Frontend:** [https://admission-management-crm-flame.vercel.app](https://admission-management-crm-flame.vercel.app)
+>
+> **Backend API:** [https://admission-management-crm-dyoy.onrender.com](https://admission-management-crm-dyoy.onrender.com)
+
+### Demo Credentials — Click any role on the login page to auto-fill
+
+| Role | Email | Password |
+|------|-------|----------|
+| 🔴 Admin | admin@crm.com | admin123 |
+| 🟢 Admission Officer | officer@crm.com | officer123 |
+| 🟣 Management | mgmt@crm.com | mgmt123 |
+
+> ⚠️ Free tier backend on Render may take 30–60 seconds to wake up on first request.
 
 ---
 
